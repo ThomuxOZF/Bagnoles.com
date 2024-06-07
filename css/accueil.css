@@ -1,0 +1,664 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+    font-family: "Sonsie one", system-ui;
+    color: white;
+}
+
+#log{
+    position: absolute;
+}
+
+.divprofil{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    height: 150px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.background{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.button_menu{
+    height: 70px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgb(226, 180, 62);
+    font-size:larger;
+}
+
+.demarrage{
+    height: 100px;
+    width: 300px;
+    font-size: 120%;
+}
+
+.button_menu:active{
+    background-color: rgb(238, 151, 37);
+}
+
+.drapo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoprofil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.deroulant{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    right: 1px;
+    z-index: 1;
+}
+
+#profilepic{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#menu li:hover .deroulant{
+    display: block;
+}
+
+.logobagnole{
+    width: 200px;
+    justify-content: center;
+}
+
+#menubutton{
+    height: 90px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: rgb(226, 180, 62);
+}
+
+
+#menu button:active{
+    background-color: rgb(238, 151, 37);
+}
+
+.deroulant button:active{
+    background-color: rgb(238, 151, 37) ;
+}
+
+.d-block{
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    max-height: 700px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide{
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+
+.carousel-indicators{
+    background: transparent;
+    
+}
+
+.carousel-control-prev-icon{
+    background: transparent;
+    background-color: rgb(226, 180, 62);
+    border-radius: 15px;
+}
+
+.carousel-control-next-icon{
+    background: transparent;
+    background-color: rgb(226, 180, 62);
+    border-radius: 15px;
+}
+
+.for{
+    display: flex;
+    flex-direction: column;
+}
+
+#titre{
+    text-align: center;
+    padding: 100px;
+    font-size: 300%;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ecrire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.text{
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.valider{
+    padding-top: 100px;
+}
+
+.profil{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#ppchange{
+    font-size: 70%;
+    text-align: center;
+}
+
+/* transfert css groupe Thomas */
+
+.Mint{
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Inria Serif", serif;
+    font-size: xx-large;
+    
+}
+
+header{
+    background-color: black;
+    
+}
+
+.logoB{
+   margin-left: 550px;
+    display: flex;
+}
+
+.video{
+    height:800px;
+    width: 1400px;
+    border-radius: 15px;
+  
+}
+
+.textB{
+    font-family: "Sonsie One", system-ui;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    font-size: xx-large;
+}
+
+.voiture{
+    color: rgb(235, 213, 12);
+}
+
+.paragraphe{
+    line-height: 50px;
+    font-size: smaller;
+}
+
+.ptitlogo{
+    display:flex ;
+    margin-left: 80px;
+}
+
+.contact {
+    font-family: "Inria Serif", serif;
+    border: solid #ebd50c;
+    padding-left: 5px; 
+    padding-right: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    
+    text-align: center;
+    margin-right: 5px;
+   }
+
+   @property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+  
+  
+  :root {
+      --d: 2000ms;
+      --angle: 90deg;
+      --gradX: 100%;
+      --gradY: 50%;
+      --c1:  #ebd50c;
+      --c2: rgba(168, 239, 255, 0.1);
+  }
+  
+  /* .wrapper {
+      min-width: min(40rem, 100%);
+  } */
+  
+  .box {
+      font-size:medium;
+      margin: max(1rem, 3vw);
+      border: 0.35rem solid;
+      padding: 2vw;
+      border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+      animation: borderRotate var(--d) linear infinite forwards;
+  }
+  
+  .box:nth-child(2) {
+      border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+      animation: borderRadial var(--d) linear infinite forwards;
+  }
+  
+  @keyframes borderRotate {
+      100% {
+          --angle: 420deg;
+      }
+  }
+  
+  @keyframes borderRadial {
+      20% {
+          --gradX: 100%;
+          --gradY: 50%;
+      }
+      40% {
+          --gradX: 100%;
+          --gradY: 100%;
+      }
+      60% {
+          --gradX: 50%;
+          --gradY: 100%;
+      }
+      80% {
+          --gradX: 0%;
+          --gradY: 50%;
+
+      }
+      100% {
+          --gradX: 80%;
+          --gradY: 50%;
+      }
+  }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parent{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 4000,
+  'GRAD' 0,
+  'opsz' 24;
+  color: rgb(235, 213, 12);
+  display: flex;
+   margin-top: 45px;
+  margin-right: 270px;
+ font-size: xx-large;
+  
+}
+
+.burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.telephone{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: rgb(181, 27, 27);
+  display: flex;
+}
+
+/* transfert css groupe Thony */
+
+.titre{
+    text-align: center;
+}
+
+
+.lo{
+    border-radius: 800%;
+    width: 550px;
+    height: 400px;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.article, .douche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    color: white;
+    
+}
+/* menu */
+
+
+
+
+
+
+
+/* page 1 */
+.toi{
+    text-align: center;
+}
+
+.moi{
+    background-color: black;
+    color: white;
+}
+
+.image { 
+  
+    background-image: url("image/15.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+
+    
+}
+
+.pol{
+    color: rgb(255, 208, 0) ;
+}
+
+
+.imagedefond { 
+    text-align: end;
+  
+    background-image: url("image/car.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -40px;
+}
+
+.pipi {
+    margin-top: 780px;
+    font-size: 30px;                                                                                                                                                                                   
+    height: 100vh; 
+    background-repeat: no-repeat;
+}
+
+.popo {
+    margin-top: 800px;
+    font-size: 30px;                                                                                                                                                                                   
+    height: 100vh; 
+    background-repeat: no-repeat;
+}
+
+.moi{
+
+        font-family: "Sonsie One", system-ui;
+        font-weight: 10;
+        font-style: normal;   
+}
+
+/* page 1 */
+
+
+
+/* page 2 */
+.images { 
+  
+    background-image: url("image2/voiture\ bleue.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;  
+}
+
+.imagedefonds { 
+    text-align: end;
+  
+    background-image: url("image2/la.webp");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -15px;
+}
+
+/* page 2 */
+
+
+
+/* page 3 */
+
+.imagess { 
+  
+    background-image: url("image3/t.webp");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;   
+}
+
+.imagedefondss { 
+    text-align: end;
+  
+    background-image: url("image3/bm.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -15px;
+}
+
+/* page 3 */
+
+
+/* page 4 */
+
+.imagesss { 
+  
+    background-image: url("image4/rang.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;   
+}
+
+.imagedefondsss { 
+    text-align: end;
+  
+    background-image: url("image4/me.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -15px;
+}
+
+/* page 4 */
+
+
+
+/* page 5 */
+
+.imagessss { 
+  
+    background-image: url("image5/y.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+}
+
+.imagedefondssss { 
+    text-align: end;
+  
+    background-image: url("image5/aud.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -15px;
+}
+
+/* page 5 */
+
+
+/* page 6 */
+
+.imagesssss { 
+  
+    background-image: url("image6/1.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+}
+
+
+.imagedefondsssss { 
+    text-align: end;
+  
+    background-image: url("image6/ttt.jpg");
+     height: 100vh; 
+    background-repeat: no-repeat;
+    width: 118em;
+    margin-top: -15px;
+}
+
+/* page 6 */
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.fromage{
+    font-family: "Sonsie One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-radius: 15px;
+    border-color: rgb(235, 213, 12);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.biere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+    }
+
+.biere li{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+.biere ul{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    gap: 10px;
+    }
+    
+.grosse-input{
+    width: 241px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px;
+    text-align: center;
+    }
+
+.abt{    
+    padding: 0px 50px;    
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: solid 0.5px;
+    font-size: 22px;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+    }
+
+.abt:active{
+    background-color: white;
+    color: black;
+}
+
+.cidre{
+        display: flex;
+        color: white;
+        gap: 20px;
+        padding-top: 10px;    
+    }
+
+.cidre i {
+       font-size: 36px;
+    }
